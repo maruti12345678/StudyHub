@@ -5,7 +5,7 @@ import axios from "axios"
 
 // Fetch all certificates for the user
 export const fetchAllCertificates = async (token) => {
-  const res = await axios.get("http://localhost:4000/api/v1/certificate/all", {
+  const res = await axios.get("https://studyhub-backend-bc8i.onrender.com/api/v1/certificate/all", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
