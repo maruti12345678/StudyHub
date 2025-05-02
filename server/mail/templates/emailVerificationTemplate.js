@@ -66,7 +66,7 @@ const otpTemplate = (otp) => {
 	
 	<body>
 		<div class="container">
-			<a href="https://study-hub-f2fi.vercel.app/api/v1"><h1>StudyHub</h1></a>
+			<a href="http://localhost:4000/api/v1"><h1>StudyHub</h1></a>
 			<div class="message">OTP Verification Email</div>
 			<div class="body">
 				<p>Dear User,</p>

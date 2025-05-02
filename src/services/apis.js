@@ -18,8 +18,7 @@ export const profileEndpoints = {
   GET_USER_DETAILS_API: BASE_URL + "/profile/getUserDetails",
   GET_USER_ENROLLED_COURSES_API: BASE_URL + "/profile/getEnrolledCourses",
   GET_INSTRUCTOR_DATA_API: BASE_URL + "/profile/instructorDashboard",
-  PURCHASE_HISTORY_API:
-    "https://study-hub-f2fi.vercel.app/api/v1/profile/purchase-history", // ✅ FULL URL
+  PURCHASE_HISTORY_API: "http://localhost:4000/api/v1/profile/purchase-history", // ✅ FULL URL
 }
 
 // STUDENTS ENDPOINTS
@@ -78,13 +77,10 @@ export const settingsEndpoints = {
 }
 
 export const fetchAllCertificates = async (token) => {
-  const res = await axios.get(
-    "https://study-hub-f2fi.vercel.app/api/v1/certificate/all",
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  )
+  const res = await axios.get("http://localhost:4000/api/v1/certificate/all", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
   return res.data.certificates
 }
