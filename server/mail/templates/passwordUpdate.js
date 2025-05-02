@@ -55,7 +55,7 @@ exports.passwordUpdated = (email, name) => {
     
     <body>
         <div class="container">
-            <a href="https://studyhub-backend-bc8i.onrender.com/api/v1"><h1>StudyHub</h1></a>
+            <a href="https://studyhub-backend-bc8i.onrender./api/v1"><h1>StudyHub</h1></a>
             <div class="message">Password Update Confirmation</div>
             <div class="body">
                 <p>Hey ${name},</p>
@@ -69,6 +69,6 @@ exports.passwordUpdated = (email, name) => {
             </div>
         </div>
     </body>
-    
+    com
     </html>`;
 };

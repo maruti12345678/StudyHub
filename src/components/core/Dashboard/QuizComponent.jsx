@@ -24,7 +24,7 @@ const QuizComponent = ({ onPass, courseId, courseDescription }) => {
   const fetchQuiz = async () => {
     try {
       const res = await fetch(
-        "https://studyhub-backend-bc8i.onrender.com/api/v1/quiz/generate-gemini",
+        "http://localhost:4000/api/v1/quiz/generate-gemini",
         {
           method: "POST",
           headers: {
@@ -136,7 +136,7 @@ const QuizComponent = ({ onPass, courseId, courseDescription }) => {
     }
 
     try {
-      const res = await fetch("https://studyhub-backend-bc8i.onrender.com/api/v1/quiz/submit", {
+      const res = await fetch("http://localhost:4000/api/v1/quiz/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

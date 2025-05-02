@@ -67,7 +67,7 @@ exports.paymentSuccessEmail = (name, amount, orderId, paymentId) => {
     
     <body>
         <div class="container">
-            <a href="https://studyhub-backend-bc8i.onrender.com/api/v1"><h1>StudyHub</h1></a>
+            <a href="http://localhost:4000/api/v1"><h1>StudyHub</h1></a>
             <div class="message">Course Payment Confirmation</div>
             <div class="body">
                 <p>Dear ${name},</p>

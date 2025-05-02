@@ -6,7 +6,7 @@ const Reviews = () => {
 
   useEffect(() => {
     axios
-      .get("https://studyhub-backend-bc8i.onrender.com/api/reviews")
+      .get("http://localhost:4000/api/reviews")
       .then((response) => setReviews(response.data))
       .catch((error) => console.error("Error fetching reviews:", error))
   }, [])
