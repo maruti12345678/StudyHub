@@ -1,5 +1,5 @@
 const otpTemplate = (otp) => {
-	return `<!DOCTYPE html>
+  return `<!DOCTYPE html>
 	<html>
 	
 	<head>
@@ -66,7 +66,7 @@ const otpTemplate = (otp) => {
 	
 	<body>
 		<div class="container">
-			<a href="http://localhost:4000/api/v1"><h1>StudyHub</h1></a>
+			<a href="https://study-hub-f2fi.vercel.app/api/v1"><h1>StudyHub</h1></a>
 			<div class="message">OTP Verification Email</div>
 			<div class="body">
 				<p>Dear User,</p>
@@ -81,6 +81,6 @@ const otpTemplate = (otp) => {
 		</div>
 	</body>
 	
-	</html>`;
-};
-module.exports = otpTemplate;
+	</html>`
+}
+module.exports = otpTemplate

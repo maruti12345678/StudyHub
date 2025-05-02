@@ -6,7 +6,7 @@ const Reviews = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/api/reviews")
+      .get("https://study-hub-f2fi.vercel.app/api/reviews")
       .then((response) => setReviews(response.data))
       .catch((error) => console.error("Error fetching reviews:", error))
   }, [])
