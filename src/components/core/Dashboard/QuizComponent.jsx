@@ -24,7 +24,7 @@ const QuizComponent = ({ onPass, courseId, courseDescription }) => {
   const fetchQuiz = async () => {
     try {
       const res = await fetch(
-        "https://study-hub-new.vercel.app/api/v1/quiz/generate-gemini",
+        "http://localhost:4000/api/v1/quiz/generate-gemini",
         {
           method: "POST",
           headers: {
@@ -136,21 +136,18 @@ const QuizComponent = ({ onPass, courseId, courseDescription }) => {
     }
 
     try {
-      const res = await fetch(
-        "https://study-hub-new.vercel.app/api/v1/quiz/submit",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({
-            courseId,
-            score: percentage,
-            passed: hasPassed,
-          }),
-        }
-      )
+      const res = await fetch("http://localhost:4000/api/v1/quiz/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          courseId,
+          score: percentage,
+          passed: hasPassed,
+        }),
+      })
 
       const data = await res.json()
 

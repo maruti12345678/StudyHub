@@ -84,7 +84,7 @@ function Catalog() {
   // ✅ Fetch verified courses
   useEffect(() => {
     axios
-      .get("https://study-hub-new.vercel.app/api/v1/course/verified-courses")
+      .get("http://localhost:4000/api/v1/course/verified-courses")
       .then((response) => {
         console.log("🟢 Verified Courses API Response:", response.data)
         setVerifiedCourses(response.data)
@@ -129,7 +129,7 @@ function Catalog() {
   useEffect(() => {
     console.log("🟢 Fetching Courses from API...")
     axios
-      .get("https://study-hub-new.vercel.app/api/v1/course/courses")
+      .get("http://localhost:4000/api/v1/course/courses")
       .then((response) => {
         console.log("🟢 API Response (Courses):", response.data)
         setCourses(response.data)

@@ -24,3 +24,4 @@ yarn-error.log*
 .qodo
 
 server\.env
+.env

@@ -67,7 +67,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
   
   <body>
       <div class="container">
-          <a href="https://study-hub-new.vercel.app/api/v1"><h1>StudyHub</h1></a>
+          <a href="http://localhost:4000/api/v1"><h1>StudyHub</h1></a>
           <div class="message">Course Registration Confirmation</div>
           <div class="body">
               <p>Dear ${name},</p>
@@ -75,7 +75,7 @@ exports.courseEnrollmentEmail = (courseName, name) => {
                   are excited to have you as a participant!</p>
               <p>Please log in to your learning dashboard to access the course materials and start your learning journey.
               </p>
-              <a class="cta" href="https://study-hub-new.vercel.app/api/v1/dashboard">Go to Dashboard</a>
+              <a class="cta" href="http://localhost:4000/api/v1/dashboard">Go to Dashboard</a>
           </div>
           <div class="support">If you have any questions or need assistance, please feel free to reach out to us at <a
                   href="mailto:info@studyhub.com">info@studyhub.com</a>. We are here to help!</div>

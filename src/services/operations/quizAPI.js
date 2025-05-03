@@ -1,6 +1,6 @@
 import { apiConnector } from "../apiConnector"
 
-const QUIZ_API = "https://study-hub-new.vercel.app/api/v1/quiz"
+const QUIZ_API = "http://localhost:4000/api/v1/quiz"
 
 export const fetchQuizHistory = async (token) => {
   try {

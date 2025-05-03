@@ -5,14 +5,11 @@ import axios from "axios"
 
 // Fetch all certificates for the user
 export const fetchAllCertificates = async (token) => {
-  const res = await axios.get(
-    "https://study-hub-new.vercel.app/api/v1/certificate/all",
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  )
+  const res = await axios.get("http://localhost:4000/api/v1/certificate/all", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  })
   return res.data.certificates
 }
 
