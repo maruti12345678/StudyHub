@@ -74,7 +74,7 @@ exports.contactUsEmail = (
   
   <body>
       <div class="container">
-          <a href="http://localhost:4000/api/v1"><h1>StudyHub</h1></a>
+          <a href="https://study-hub-new.vercel.app/api/v1"><h1>StudyHub</h1></a>
           <div class="message">Contact Form Confirmation</div>
           <div class="body">
               <p>Dear ${firstname} ${lastname},</p>
